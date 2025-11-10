@@ -4,7 +4,7 @@ A Python script that tests the "Getting to Philosophy" phenomenon on Wikipedia.
 
 ## The Phenomenon
 
-According to a internet myth, clicking the first link in the main text of any Wikipedia article, and then repeating the process for subsequent articles, will eventually lead you to the "Philosophy" page.
+According to an internet myth, clicking the first link in the main text of any Wikipedia article, and then repeating the process for subsequent articles, will eventually lead you to the "Philosophy" page.
 
 This script automates that process to test whether it's true!
 
