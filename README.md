@@ -12,15 +12,6 @@ This script automates that process to test whether it's true!
 
 The idea for this project came from [this TikTok video](https://www.tiktok.com/@lukasg007/video/7498752547780414766) by @lukasg007.
 
-## Features
-
-- Interactive prompt for starting Wikipedia page
-- Follows the first valid link in each article's main content
-- Skips links in parentheses and italics (following Wikipedia's actual pattern)
-- Detects loops and attempts to recover by trying the second link
-- Verbose output showing each page visited
-- Comprehensive summary with full path and statistics
-
 ## Installation
 
 1. Clone or download this repository
@@ -68,55 +59,56 @@ If a loop is detected (visiting the same page twice), the script will backtrack 
 ## Example Output
 
 ```
+============================================================
 🌐 Wikipedia Philosophy Game
 ============================================================
-Enter a Wikipedia page title (e.g., 'Dog', 'Python'): Dog
+Enter a Wikipedia page title (e.g., 'Dog', 'Python'): Computer
 
-🎯 Starting from: Dog
+🎯 Starting from: Computer
 🎯 Target: Philosophy
 ────────────────────────────────────────────────────────────
-1. Dog
-2. Domestication
-3. Mutualism_(biology)
-4. Symbiosis
-5. Interaction
-6. Action_(philosophy)
-7. Philosophy
+1. Computer
+2. Machine
+3. Thermodynamic_system
+4. Matter
+5. Classical_physics
+6. Scientific_theory
+7. Universe
+8. Space
+9. Three-dimensional_space
+10. Geometry
+11. Mathematics
+12. Empirical_sciences
+13. Hypotheses
+14. Explanation
+15. Proposition
+16. Philosophy_of_language
 
 ✅ SUCCESS! Reached Philosophy!
 ────────────────────────────────────────────────────────────
 
 📊 Summary:
-   Total clicks: 7
+   Total clicks: 16
 
 📍 Path taken:
-   1. Dog
-   2. Domestication
-   3. Mutualism_(biology)
-   4. Symbiosis
-   5. Interaction
-   6. Action_(philosophy)
-   7. Philosophy
+   1. Computer
+   2. Machine
+   3. Thermodynamic_system
+   4. Matter
+   5. Classical_physics
+   6. Scientific_theory
+   7. Universe
+   8. Space
+   9. Three-dimensional_space
+   10. Geometry
+   11. Mathematics
+   12. Empirical_sciences
+   13. Hypotheses
+   14. Explanation
+   15. Proposition
+   16. Philosophy_of_language
+   17. Philosophy
 ```
 
-## Limitations
 
-- The script may not work for all Wikipedia pages (some pages have unusual structures)
-- Wikipedia's HTML structure may change over time, potentially breaking the parser
-- Some pages may lead to loops or dead ends
-- The script respects a maximum of 500 iterations to prevent infinite loops
 
-## Requirements
-
-- Python 3.7+
-- requests
-- beautifulsoup4
-- lxml
-
-## License
-
-This is a fun educational project. Feel free to use and modify as you wish!
-
-## Contributing
-
-Found a bug or have an improvement? Feel free to open an issue or submit a pull request!
